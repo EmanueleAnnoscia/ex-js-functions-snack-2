@@ -53,14 +53,14 @@
 
 // stampaOgniSecondo('Ciao Mondo')
 
-// //snack 6
-// function creaContatoreAutomatico(intervalloTemp){
-//     let counter = 0;
-//     return setInterval(()=> console.log(counter ++), intervalloTemp );
+//snack 6
+//  function creaContatoreAutomatico(intervalloTemp){
+//      let counter = 0;
+//      return setInterval(()=> console.log(counter ++), intervalloTemp );
 
-// }
+//  }
 
-// creaContatoreAutomatico(5000)
+//  creaContatoreAutomatico(1000)
 
 // //snack 7
 // function eseguiEFerma(message, start, stop){
@@ -109,30 +109,30 @@
 
 //snack10
 
-function somma(numero1, numero2){
-     return numero1 + numero2;
- }
+// function somma(numero1, numero2){
+//      return numero1 + numero2;
+//  }
 
- let square = (numero) => numero * numero;
+//  let square = (numero) => numero * numero;
 
-function creaThrottler( callback ,limite){
-    let ultimoTempo = 0;
+// function creaThrottler( callback ,limite){
+//     let ultimoTempo = 0;
 
-    return function(...args){
-        const adesso = Date.now();
-        if(adesso - ultimoTempo>= limite){
-            ultimoTempo = adesso;
-            return callback(...args)
-        }
-    };
+//     return function(...args){
+//         const adesso = Date.now();
+//         if(adesso - ultimoTempo>= limite){
+//             ultimoTempo = adesso;
+//             return callback(...args)
+//         }
+//     };
 
-}
+// }
 
-const sommaThrottled = creaThrottler(somma, 5000)
+// const sommaThrottled = creaThrottler(somma, 5000)
 // const squareThrottled = creaThrottler (square, 5000)
 
 // console.log(sommaThrottled(5,8));
 // console.log(squareThrottled(13));
 // setTimeout(() => console.log(sommaThrottled(2, 3)), 6000); 
-setInterval(()=> console.log(sommaThrottled(80,20)), 1000)
+// setInterval(()=> console.log(sommaThrottled(80,20)), 1000)
 // setTimeout(()=> console.log(squareThrottled(13)), 5000)
