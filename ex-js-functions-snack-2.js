@@ -17,7 +17,7 @@
 
 // //snack 2
 
-// let square = (numero) => numero * numero;
+// let square = (numero) => numero * numero; //nuova scrittura con n** 2 2 indicante al quadrato
 
 // console.log(square(4))
 
